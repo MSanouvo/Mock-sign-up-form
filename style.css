@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 0 10vw;
+}
+#banner,
+#content{
+    display: flex;
+    height: 100vh;
+}
+
+#banner{
+    border: 1px solid red;
+    width: 35vw;
+    background:center url(./images/gunpla.jpg);
+    background-size: auto 100%;
+}
+
+#content{
+    border: 1px solid blue;
+    width: 65vw;
+}
+
+.odin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vw;
+    width: 100vw;
+    opacity: 0.6; /*Need to change opacity to not affect content*/
+    background-color: black;
+    margin-top: 20vh;
+    color: white;
+    font-size: 2rem;
+}
+
+.odin-image{
+    height: 10vh;
+    width: 5vw;
+}
+
