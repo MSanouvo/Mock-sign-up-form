@@ -6,27 +6,28 @@ body{
 #banner,
 #content{
     display: flex;
-    height: 100vh;
+    height: 95vh;
 }
 
 #banner{
     border: 1px solid red;
-    width: 35vw;
+    width: 30vw;
     background:center url(./images/gunpla.jpg);
     background-size: auto 100%;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #content{
     border: 1px solid blue;
-    width: 65vw;
+    width: 70vw;
 }
 
 .odin{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vw;
-    width: 100vw;
+    height: 8vw;
     opacity: 0.6; /*Need to change opacity to not affect content*/
     background-color: black;
     margin-top: 20vh;
@@ -39,3 +40,8 @@ body{
     width: 5vw;
 }
 
+
+.credit{
+    display: flex;
+    justify-content: center;
+}
