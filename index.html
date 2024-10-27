@@ -19,11 +19,31 @@
 
 <!--Right side content w/ form-->
 <div id="content">
-    <div class="intro"></div>
-    <form action="">
-
+    <div class="intro">
+        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Odio incidunt neque quia accusamus, eligendi rerum recusandae 
+            vel accusantium quidem dolor ipsa repellat corrupti 
+            mollitia eum sequi, provident tenetur deserunt delectus.</span>
+    </div>
+    <form class="sign-up" action="" method="post">
+        <label for="first_name">First Name</label>
+        <input type="text" name="first_name" id="first_name" placeholder="Amuro">
+        <label for="last_name">Last Name</label>
+        <input type="text" name="last_name" id="last_name" placeholder="Ray">
+        <label for="user_email">Email</label>
+        <input type="email" name="email" id="user_email" placeholder="amuroray@newtype.com">
+        <label for="phone_number">Phone Number</label>
+        <input type="number" name="phone_number" id="phone_number" placeholder="123-456-789">
+        <label for="user_password">Password</label>
+        <input type="password" name="user_password" id="user_password">
+        <label for="password_confirmation">Confirm Password</label>
+        <input type="password" name="password_confirmation" id="password_confirmation">
     </form>
-    <div class="confirmation"></div>
+    <div class="confirmation">
+        <button class="confirmation-button">Create Account</button>
+        <span>Already have an account?&nbsp; <a href="">Log in</a></span>
+    </div>
+    
 </div>
 
 
