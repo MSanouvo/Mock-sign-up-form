@@ -178,3 +178,9 @@ input:invalid{
 .spacer{
     color: white;
 }
+
+/* hide arrows on number input */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
