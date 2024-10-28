@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Norse-bold;
+    src: url(fonts/Norse-Bold.otf);
+}
 body{
     display: flex;
     flex-direction: row;
@@ -34,6 +38,7 @@ body{
     margin-top: 20vh;
     color: white;
     font-size: 2rem;
+    font-family: Norse-Bold;
 }
 
 .odin-image{
@@ -75,7 +80,7 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    box-shadow: 0px 2px 1px 1px rgb(185, 185, 185);
+    box-shadow: 0px 2px 1px rgb(185, 185, 185);
     background-color: white;
 }
 
@@ -147,6 +152,29 @@ input{
 }
 
 .link{
-    color: yellow;
+    color: rgb(0, 0, 255);
     font-weight: 800;
+}
+
+input:focus{
+    outline: none;
+    border-color:rgb(0, 204, 255);
+    box-shadow: 2px 2px 2px grey;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+.validation,
+.spacer{
+    font-size: .8rem;
+}
+
+.validation{
+    color: red;
+}
+
+.spacer{
+    color: white;
 }

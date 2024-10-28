@@ -18,7 +18,7 @@
 </div>
 
 <!--Right side content w/ form-->
-<div id="content">
+<form id="content">
     <div class="intro">
         <span class="intro-msg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
             Odio incidunt neque quia accusamus, eligendi rerum recusandae 
@@ -26,7 +26,7 @@
             <br>
             <br>mollitia eum sequi, provident tenetur deserunt delectus.</span>
     </div>
-    <form class="sign-up" action="" method="post">
+    <div class="sign-up" action="" method="post">
         <div><span class="form-message">Let's do this!</span></div>
         <div class="form-content">
             <div class="left-side">
@@ -40,7 +40,8 @@
                 </div>
                 <div class="form-input">
                     <label for="user_password">Password</label>
-                    <input type="password" name="user_password" id="user_password">
+                    <input type="password" name="user_password" id="user_password" required>
+                    <span class="validation">*passwords do not match</span>
                 </div>
             </div>
             <div class="middle">
@@ -54,20 +55,21 @@
                 </div>
                 <div class="form-input">
                     <label for="password_confirmation">Confirm Password</label>
-                    <input type="password" name="password_confirmation" id="password_confirmation">
+                    <input type="password" name="password_confirmation" id="password_confirmation" pattern=user_password required>
+                    <span class="spacer">.</span>
                 </div>
             </div>
             <div class="right-side"></div> 
         </div>
            
-    </form>
+    </div>
 
     <div class="confirmation">
-        <button class="confirmation-button">Create Account</button>
+        <button class="confirmation-button" type="submit">Create Account</button>
         <span class="log-in">Already have an account?&nbsp; <a class="link log-in" href="">Log in</a></span>
     </div>
     
-</div>
+</form>
 
 
     
